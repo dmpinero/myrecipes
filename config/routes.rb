@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
-  get '/home', to:'pages#home'
+  root 'pages#home' # Redirección de la raiz de la aplicación al controlador pages y método home
+  get '/home', to:'pages#home' # Redirección al controlador pages y método home
   
 end
